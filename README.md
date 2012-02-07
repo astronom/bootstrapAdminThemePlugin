@@ -1,22 +1,22 @@
-h1. Installation
+# Installation
 
 Extract the bootstrapAdminThemePlugin directory into the /plugins directory and enable the plugin in your ProjectConfiguration class.
 
-h2. Usage
+## Usage
 
 Enable the plugin by setting the theme on creation of the admin generator module.
 
 e.g.
 
-bc. ./symfony doctrine:generate-admin --theme=bootstrap backend ModelName
+$ ./symfony doctrine:generate-admin --theme=bootstrap backend ModelName
 
 or in generator.yml if you've already created your module
 
-bc. generator:
-bc.   param:
-bc.     theme:                 bootstrap
+$ generator:
+$   param:
+$     theme:                 bootstrap
 
-h2. Licence (MIT)
+## Licence (MIT)
 
 Copyright (c) 2012 Malcolm Fell <malcoholm@gmail.com>
 

@@ -13,7 +13,11 @@
       These results are filtered. <a href="#filterPopup" data-toggle="modal">Modify filter</a>
     </div>
     [?php endif; ?]
-    [?php include_partial('<?php echo $this->getModuleName() ?>/filters', array('form' => $filters, 'configuration' => $configuration)) ?]
+
+    <div class="pull-right">
+      <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-cog"></i>Filter</a>
+    </div>
+
   <?php endif; ?>
 
   <h1>[?php echo <?php echo $this->getI18NString('list.title') ?> ?]
@@ -39,3 +43,7 @@
   </div>
 
 </div> <!-- /container -->
+
+<?php if ($this->configuration->hasFilterForm()): ?>
+  [?php include_partial('<?php echo $this->getModuleName() ?>/filters', array('form' => $filters, 'configuration' => $configuration)) ?]
+<?php endif; ?>

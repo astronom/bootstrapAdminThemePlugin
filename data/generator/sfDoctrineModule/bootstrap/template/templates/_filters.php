@@ -1,10 +1,6 @@
 [?php use_stylesheets_for_form($form) ?]
 [?php use_javascripts_for_form($form) ?]
 
-<div class="pull-right">
-  <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-cog"></i>Filter</a>
-</div>
-
 <div id="filterPopup" class="modal hide fade">
 
   <form action="[?php echo url_for('<?php echo $this->getUrlForAction('collection') ?>', array('action' => 'filter')) ?]" method="post" class="form-horizontal">

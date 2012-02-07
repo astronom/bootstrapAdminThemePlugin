@@ -28,10 +28,10 @@
 [?php endif; ?]
 <?php endif; ?>
 <?php endforeach; ?>
-<?php endforeach; ?>
 <?php echo $deleteButton ?>
 <div class="btn-group">
 <?php echo $buttons?>
 </div>
+<?php endforeach; ?>
 [?php endif; ?]
 </div>

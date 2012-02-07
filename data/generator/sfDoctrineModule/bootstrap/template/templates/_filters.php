@@ -5,7 +5,7 @@
   <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-cog"></i>Filter</a>
 </div>
 
-<div id="filterPopup" class="modal fade">
+<div id="filterPopup" class="modal hide fade">
 
   <form action="[?php echo url_for('<?php echo $this->getUrlForAction('collection') ?>', array('action' => 'filter')) ?]" method="post" class="form-horizontal">
   

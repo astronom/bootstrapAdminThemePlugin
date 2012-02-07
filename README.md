@@ -8,13 +8,13 @@ Enable the plugin by setting the theme on creation of the admin generator module
 
 e.g.
 
- $ ./symfony doctrine:generate-admin --theme=bootstrap backend ModelName
+    ./symfony doctrine:generate-admin --theme=bootstrap backend ModelName
 
 or in generator.yml if you've already created your module
 
- $ generator:
- $   param:
- $     theme:                 bootstrap
+    generator:
+      param:
+        theme:                 bootstrap
 
 ## Licence (MIT)
 

@@ -4,7 +4,7 @@
 [?php if ($form->isNew()): ?]
 <?php else: ?>
 [?php else: ?]
-<?php endif; $buttons = ''; ?>
+<?php endif; $buttons = ''; $deleteButton = ''; ?>
 <?php foreach ($this->configuration->getValue($action.'.actions') as $name => $params): ?>
 <?php if ('_delete' == $name): ?>
   <?php $deleteButton = $this->addCredentialCondition('[?php echo $helper->linkToDelete($form->getObject(), '.$this->asPhp($params).') ?]', $params) ?>

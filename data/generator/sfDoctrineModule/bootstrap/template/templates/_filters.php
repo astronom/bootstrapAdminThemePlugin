@@ -32,7 +32,7 @@
     </div>
     
     <div class="modal-footer">
-      <button type="submit" class="btn btn-primary">[?php echo __('<i class="icon-search"></i> Search', array(), 'sf_admin') ?]</button>
+      <button type="submit" class="btn btn-primary">[?php echo __('<i class="icon-search icon-white"></i> Search', array(), 'sf_admin') ?]</button>
       [?php echo link_to(__('Reset', array(), 'sf_admin'), '<?php echo $this->getUrlForAction('collection') ?>', array('action' => 'filter'), array('query_string' => '_reset', 'method' => 'post', 'class' => 'btn')) ?]
     </div>
     

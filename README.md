@@ -1,12 +1,14 @@
-# Installation
+## Installation
 
-Extract the bootstrapAdminThemePlugin directory into the /plugins directory and enable the plugin in your ProjectConfiguration class.
+Add this repository as a git submodule, or just place the bootstrapAdminThemePlugin folder in your project's plugins folder.
+
+    git submodule add git://github.com/malcoholm/bootstrapAdminThemePlugin.git plugins/bootstrapAdminThemePlugin
+
+Enable the plugin in your ProjectConfiguration class.
 
 ## Usage
 
-Enable the plugin by setting the theme on creation of the admin generator module.
-
-e.g.
+Enable the plugin on your module by setting the theme on creation of the admin generator module.
 
     ./symfony doctrine:generate-admin --theme=bootstrap backend ModelName
 

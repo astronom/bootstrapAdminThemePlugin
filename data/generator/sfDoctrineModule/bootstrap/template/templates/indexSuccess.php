@@ -15,7 +15,7 @@
     [?php endif; ?]
 
     <div class="pull-right">
-      <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-cog"></i>Filter</a>
+      <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-search"></i>Search</a>
     </div>
 
   <?php endif; ?>

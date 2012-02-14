@@ -12,13 +12,13 @@
     </div>
     [?php endif; ?]
 
-    <div class="pull-right">
-      <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-search"></i> Search</a>
-    </div>
-
   <?php endif; ?>
 
   <div class="page-header">
+
+    <div class="pull-right">
+      <a href="#filterPopup" class="btn" data-toggle="modal"><i class="icon-search"></i> Search</a>
+    </div>
     <h1>[?php echo <?php echo $this->getI18NString('list.title') ?> ?]
     <small class="offset2">[?php echo format_number_choice('[0] no result|[1] 1 result|(1,+Inf] %1% results', array('%1%' => $pager->getNbResults()), $pager->getNbResults(), 'sf_admin') ?]
     [?php if ($pager->haveToPaginate()): ?]

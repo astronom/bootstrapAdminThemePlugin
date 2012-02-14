@@ -3,8 +3,6 @@
 
 [?php #include_partial('<?php echo $this->getModuleName() ?>/navbar', array('filter' => <?php echo $this->configuration->hasFilterForm() ? true : false ?>)) ?]
 
-<div class="container">
-
   <?php if ($this->configuration->hasFilterForm()): ?>
     [?php $filterValues = $sf_user->getRawValue()->getAttribute('<?php echo $this->getModuleName() ?>.filters', array(), 'admin_module'); if (!empty($filterValues)): ?]
     <div class="alert alert-info alert-block">
@@ -41,8 +39,6 @@
   <div id="sf_admin_footer">
     [?php include_partial('<?php echo $this->getModuleName() ?>/list_footer', array('pager' => $pager)) ?]
   </div>
-
-</div> <!-- /container -->
 
 <?php if ($this->configuration->hasFilterForm()): ?>
   [?php include_partial('<?php echo $this->getModuleName() ?>/filters', array('form' => $filters, 'configuration' => $configuration)) ?]

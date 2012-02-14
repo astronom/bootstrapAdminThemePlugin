@@ -1,7 +1,9 @@
 [?php use_helper('I18N', 'Date') ?]
 [?php include_partial('<?php echo $this->getModuleName() ?>/assets') ?]
 
-  <h1>[?php echo <?php echo $this->getI18NString('edit.title') ?> ?]</h1>
+  <div class="page-header">
+    <h1>[?php echo <?php echo $this->getI18NString('edit.title') ?> ?]</h1>
+  </div>
 
   [?php include_partial('<?php echo $this->getModuleName() ?>/flashes') ?]
 

@@ -9,12 +9,12 @@
       <div class="controls [?php echo $class ?]">
         [?php echo $form[$name]->render($attributes instanceof sfOutputEscaper ? $attributes->getRawValue() : $attributes) ?]
         <span class="help-inline">[?php echo $form[$name]->renderError() ?]</span>
+        [?php if ($help): ?]
+          <p class="help-block">[?php echo __($help, array(), '<?php echo $this->getI18nCatalogue() ?>') ?]</p>
+        [?php elseif ($help = $form[$name]->renderHelp()): ?]
+          <p class="help-block">[?php echo $help ?]</p>
+        [?php endif; ?]
       </div>
 
-      [?php if ($help): ?]
-        <p class="help-block">[?php echo __($help, array(), '<?php echo $this->getI18nCatalogue() ?>') ?]</p>
-      [?php elseif ($help = $form[$name]->renderHelp()): ?]
-        <p class="help">[?php echo $help ?]</p>
-      [?php endif; ?]
   </div>
 [?php endif; ?]

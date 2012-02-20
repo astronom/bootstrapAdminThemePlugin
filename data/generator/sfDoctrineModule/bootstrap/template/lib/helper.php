@@ -17,7 +17,7 @@ abstract class Base<?php echo ucfirst($this->getModuleName()) ?>GeneratorHelper 
 
   public function linkToNew($params)
   {
-    return link_to('&plus; '.__($params['label'], array(), 'sf_admin'), '@'.$this->getUrlForAction('new'), array('class' => 'btn btn-info'));
+    return link_to('<i class="icon-plus icon-white"></i> '.__($params['label'], array(), 'sf_admin'), '@'.$this->getUrlForAction('new'), array('class' => 'btn btn-info'));
   }
 
   public function linkToEdit($object, $params)

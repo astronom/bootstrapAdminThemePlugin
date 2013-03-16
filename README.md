@@ -1,3 +1,10 @@
+## Forked and updated. See commit history
+
+Bootstrap v2.3.1
+Font Awesome 3.0.2
+holder.js
+Some fix
+
 ## Installation
 
 Add this repository as a git submodule, or just place the bootstrapAdminThemePlugin folder in your project's plugins folder.

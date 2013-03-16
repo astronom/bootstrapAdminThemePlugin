@@ -1,5 +1,5 @@
-<div class="pull-right">
-  <ul class="pagination">
+<div class="pagination pagination-centered">
+	<ul>
   
   <li><a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=1">&laquo;</a></li>
 

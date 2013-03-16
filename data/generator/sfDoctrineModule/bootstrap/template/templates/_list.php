@@ -5,7 +5,7 @@
     </div>
   [?php else: ?]
 
-    <table class="table table-striped">
+    <table class="table table-striped table-bordered">
       <thead>
         <tr>
 <?php if ($this->configuration->getValue('list.batch_actions')): ?>
